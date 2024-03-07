@@ -1,4 +1,4 @@
-import { Schema, model, models } from "mongoose";
+import { Document, Schema, model, models } from "mongoose";
 
 export interface IImage extends Document {
   title: string;
@@ -30,7 +30,7 @@ const ImageSchema=new Schema({
   height:{type:Number},
   config:{type:Object},
   transformationUrl:{type:URL},
-  aspectRation:{type:String},
+  aspectRatio:{type:String},
   color:{type:String},
   prompt:{type:String}, 
   author:{type:Schema.Types.ObjectId, ref:'User'},
@@ -38,5 +38,5 @@ const ImageSchema=new Schema({
   updatedAt:{type:Date,default:Date.now}
 })
 /*now we are turning the above schema into a model */
-const Image=models?.Image|| model('Image',ImageSchema);
+const Image=models?.Image || model('Image',ImageSchema);
 export default Image;
