@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "elia3",
+			"path": "../.."
+		},
+		{
+			"name": "public",
+			"path": "../../../../Downloads/ai_saas_app-main/ai_saas_app-main/public"
+		}
+	],
+	"settings": {}
+}
